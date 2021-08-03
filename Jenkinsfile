@@ -3,7 +3,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
 
-        def customImage = docker.build("FYP/dockerwebapp")
+        def customImage = docker.build("skyedevops/dockerwebapp")
 
         /* Push the container to the custom Registry */
         customImage.push()
